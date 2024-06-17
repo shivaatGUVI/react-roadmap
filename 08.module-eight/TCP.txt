@@ -1,0 +1,59 @@
+TCP (Transmission Control Protocol) is a fundamental protocol in the Internet protocol suite that ensures reliable and ordered delivery of data between applications running on hosts on a TCP/IP network. It is a connection-oriented protocol that establishes a connection between the sender and receiver before data is sent, ensuring that data is delivered in the correct order and without errors.
+
+
+Key features of TCP: - 
+
+    1. Connection oriented - TCP establishes a connection between the sender and receiver before data is sent. This connection remains active until the data transfer is complete.
+
+    2. Reliable Delivery - TCP ensures reliable delivery of data by using sequence numbers to identify the order of the bytes sent from each computer. If any data is lost during transmission, the sender can retransmit the data.
+
+    3. Flow Control - TCP manages flow control by regulating the rate of data transmission between the sender and receiver to prevent the receiver from being flooded with data it cannot handle promptly.
+
+    4. Error Detection and Correction - TCP includes mechanisms to detect and correct errors that may occur during data transmission. This includes retransmitting lost or corrupted packets and ensuring that data is delivered in the correct order.
+
+    5. Multiplexing - TCP allows multiple applications to share the same connection, making it a versatile protocol for various network applications.
+
+
+TCP Connection Establishement: - 
+
+    1. SYN (Synchronize) Packet - The client sends a SYN packet to the server to initiate the connection.
+
+    2. SYN-ACK (Synchronize-Acknowledgment) Packet - The server responds with a SYN-ACK packet, which includes its own sequence number and an acknowledgment of the client's sequence number.
+
+    3. ACK (Acknowledgment) Packet - The client sends an ACK packet to the server, which confirms the connection establishment.
+
+
+TCP Data Transfer: -
+
+    Once the connection is established, TCP divides the data into smaller packets, assigns sequence numbers to each packet, and transmits them to the destination. The receiver reassembles the packets in the correct order using the sequence numbers and acknowledges each packet received.
+
+
+TCP Connection Termination: - 
+
+    1. FIN (Finish) Packet - The client sends a FIN packet to the server to initiate the connection termination.
+
+    2. ACK (Acknowledgment) Packet - The server responds with an ACK packet, which acknowledges the client's FIN packet.
+
+    3. FIN (Finish) Packet - The server sends a FIN packet to the client to confirm the connection termination.
+
+    4. ACK (Acknowledgment) Packet - The client responds with an ACK packet to confirm the connection termination.
+
+
+Advantages of TCP Connection: - 
+
+    1. Reliability - TCP ensures reliable delivery of data by detecting and correcting errors.
+
+    2. Flow Control - TCP regulates the rate of data transmission to prevent the receiver from being flooded with data.
+
+    3. Order and Sequence - TCP ensures that data packets are received in the same order as they were transmitted.
+
+    4. Error Checking - TCP includes extensive error checking to identify flaws in received data.
+
+    5. Connection oriented - TCP establishes a connection between the sender and receiver before data is sent, ensuring a dependable and steady communication link.
+
+
+Disadvantages of TCP Connection: - 
+
+    1. Overhead - TCP headers can be large, which can increase overhead and potentially lead to fragmentation by routers.
+
+    2. Complexity - TCP is a complex protocol that requires significant processing power and memory resources.

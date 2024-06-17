@@ -1,0 +1,35 @@
+React components are the fundamental building blocks of a React application. They are reusable pieces of code that represent a part of the user interface. React offers two main types of components: functional components and class components.
+
+
+Functional Components
+
+    Functional components are JavaScript functions that return React elements (JSX). They are simple and easy to understand. Functional components can receive props as input parameters and use them to render the UI.
+
+    Here's an example of a functional component: - 
+
+    function HelloWorld() {
+        return <h1>Hello World!</h1>;
+    }
+
+    Functional components are also known as stateless components because they don't have their own state. However, with the introduction of React Hooks in version 16.8, functional components can now manage state and lifecycle methods.
+
+
+Class Components
+
+    Class components are defined as ES6 classes that extend the React.Component class. They have access to state and lifecycle methods, making them more powerful than functional components.
+
+    Here's an example of a class component: -
+
+    class HelloWorld extends React.Component {
+        render() {
+            return <h1>Hello World!</h1>;
+        }
+    }
+
+
+THE REACT OFFICIAL DOCUMENTATION RECOMMENDS DEFINING COMPONENTS AS FUNCTIONS INSTEAD OF CLASSES.
+
+
+Higher-Order Components (HOCs)
+
+    Higher-Order Components are functions that take a component as input and return a new component with additional functionality. They are a powerful pattern for reusing component logic.

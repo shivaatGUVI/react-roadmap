@@ -1,0 +1,55 @@
+HTTP (Hypertext Transfer Protocol) is a fundamental protocol of the Internet that enables the transfer of data between a client and a server. It is the foundation of data communication for the World Wide Web, providing a standard for transferring data from one computer to another. 
+
+
+Methods of HTTP requests: - 
+
+    1. GET   :- Retrival of data from the specified resource (server/database).
+    2. PUT   :- Updates/creates a resource (document).
+    3. POST  :- Submits data to be processed by the specified resource (server).
+    4. DELETE:- Removed a resource (document).
+    5. PATCH :- Updated specific fields of a resource (document).
+    6. HEAD  :- Retrival of response headers, to understand the resource properties without transferring the data.
+    7. OPTIONS:- Retrival of communication options available for a resource (server).
+    8. CONNECT:- Establishes a tunnel to the server through an HTTP proxy, commonly used for SSL/TLS connections.
+
+[ SSL/TLS: - SSL/TLS (Secure Sockets Layer/Transport Layer Security) is a cryptographic protocol that provides secure communication over the Internet. It ensures that data transmitted between a client (Web browser) and a server remains confidential and cannot be intercepted or tampered with by unauthorized individuals.]
+
+
+HTTP Request-Response Cycle: -
+    Client (Web browser) sends a request -> Server (Backend) recieves the request -> Server process the request and sends a response body back to the Client -> Client recieves the response and does the processes the data recieved.
+
+
+Components of HTTP: -
+
+    - Request headers : Text information in key-value pair sent with every HTTP request, which has details related to client's browser (chrome/edge/brave/etc), requested data, etc.
+
+    - Request body : Contains data submitted to the server (backend) by the client (web browser), such as form inputs, authentication details, or other payload data.
+
+    - Response : Sent by the server to the client as an answer to the request, it contains HTTP status codes, response headers and an optional response body. 
+
+    - HTTP Status code : Three digit number indicating the outcome of the HTTP request, categorized into informational, success, redirection, client error, and server error blocks.
+
+    - Response headers : Provide information like the data format, language and content type of the response body to better handle/interpret data on the client (web browsers).
+
+    - Response body : Contains the requested information sent by the server, such as HTML content for webpages, JSON data, or other data based on the client’s request.
+
+
+Features of HTTP: - 
+
+    1. Stateless: - Each request is independent and the server does not retain previous interactions' information.
+
+    2. Text-based: - Messages are in plain text, making them readable and debuggable.
+
+    3. Client-Server model: - Follows a client-server architecture for requesting and serving resources.
+
+    4. Request-Response model: - Operates on a request-response cycle between clients and servers.
+
+    5. Request methods: - Supports various methods like GET, POST, PUT, DELETE for different actions on resources.
+
+
+Advantages: - Platform independence, compatibility with various protocols and technologies, efficiency.
+
+Disadvantages: Lack of security, performance issues, and statelessness requiring additional mechanisms for maintaining state.
+
+
+https://www.perplexity.ai/search/What-is-HTTP-tLYBe21JTJiJJYARn0VrHA

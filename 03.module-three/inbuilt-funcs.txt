@@ -1,0 +1,6 @@
+
+- push & pop
+- slice & splice
+- indexOf()
+
+

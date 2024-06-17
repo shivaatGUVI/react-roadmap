@@ -1,0 +1,11 @@
+Brief discussion about Vanilla JavaScript, DOM manipulation, Functions, Errors.
+
+Installation of react app using vite and create-react-app
+
+Understanding the general flow of the application, folder structures, etc.
+
+How index.js/main.jsx files load the react components in the index.html file.
+
+Brief discussion about files like .gitignore, package.json, package-lock.json.
+
+best practices about writing react codes with examples like imports, component naming, etc.

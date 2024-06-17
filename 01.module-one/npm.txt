@@ -1,0 +1,12 @@
+NPM stands for Node Package Manager.
+
+It is a crucial tool in web development, particluarly for JavaScript and Node.js projects. It serves multiple functions which are as follows: - 
+
+1. Software Registry
+    NPM is renowned as the world's largest software registry, housing over 800,000 code packages. It serves as a platform where open-source developers can share their software creations, and organizations can manage their private development projects.
+
+2. Package Manager
+    NPM is not just a registry but also a package manager and installer. It allows developers to manage dependencies efficiently by installing all the necessary dependencies of a project with a single command. These dependencies are defined in a file called package.json, which must include essential fields like name and version.
+
+3. Sharing you Software
+    For developers looking to share their software on the npm registry, they can publish any directory from their computer as long as it contains a package.json file. This process involves logging in, navigating to the project directory, and executing the npm publish command.

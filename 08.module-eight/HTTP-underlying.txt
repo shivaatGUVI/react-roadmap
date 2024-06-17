@@ -1,0 +1,8 @@
+HTTP (Hypertext Transfer Protocol) relies on an underlying network-layer protocol to function. The primary protocols used by HTTP for network connections are:
+
+Transmission Control Protocol (TCP): - Most commonly used protocol for HTTP connections. TCP ensures TCP ensures reliable data transfer by guaranteeing that data packets are delivered in the correct order and retransmitting lost or corrupted packets. TCP is used in HTTP/1.1 and earlier versions.
+
+User Datagram Protocol (UDP): - HTTP/3 uses UDP as the underlying transport protocol. UDP is a connectionless protocol that does not guarantee delivery or order of packets. This allows for faster and more efficient communication, especially for applications that require low latency.
+
+Quick UDP Internet Connection (QUIC): - HTTP/3 uses QUIC over UDP, which is a transport protocol designed to improve performance and reliability. QUIC combines the transport and cryptographic handshakes into a single round trip, reducing the time required to set up a connection. QUIC also includes advanced features like multiplexing and header compression to improve performance.
+

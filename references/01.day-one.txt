@@ -1,0 +1,16 @@
+https://react.dev/learn/render-and-commit
+
+State variables might look like regular JavaScript variables that you can read and write to. However, state behaves more like a snapshot. Setting it does not change the state variable you already have, but instead triggers a re-render.
+
+- Setting state requests a new render.
+- React stores state outside of your component, as if on a shelf.
+- When you call useState, React gives you a snapshot of the state for that render.
+- Variables and event handlers don’t “survive” re-renders. Every render has its own event handlers.
+- Every render (and functions inside it) will always “see” the snapshot of the state that React gave to that render.
+- You can mentally substitute state in event handlers, similarly to how you think about the rendered JSX.
+- Event handlers created in the past have the state values from the render in which they were created.
+
+
+- Setting state does not change the variable in the existing render, but it requests a new render.
+- React processes state updates after event handlers have finished running. This is called batching.
+- To update some state multiple times in one event, you can use setNumber(n => n + 1) updater function.

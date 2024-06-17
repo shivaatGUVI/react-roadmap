@@ -1,0 +1,14 @@
+Library
+    - A library is a collection of pre-written code that provides specific functionalities to solve a particular problem or perform a specific task. It is a set of reusable code components that can be used in various applications.
+
+Framework
+    - A framework is a set of pre-written code that provides a structure or a skeleton for the application, along with tools and utilities to facilitate the development process. It is a comprehensive system that includes libraries and tools to support the development of a specific type of application.
+
+
+Key Differences: - 
+
+1. Control: - Libraries provide control to the developer, whereas frameworks impose a specific structure and workflow.
+
+2. Functionality: - Libraries focus on providing specific functionalities, whereas frameworks provide a comprehensive system for developing applications.
+
+3. Ease of Use: - Libraries are generally easier to use than frameworks, which can be more complex and imposing due to their structured approach.

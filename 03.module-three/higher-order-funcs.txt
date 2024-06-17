@@ -1,0 +1,109 @@
+Higher Order Functions: - 
+    Higher Order Function is a function that can accept another functions as an argument, return a functions or do both.
+
+Array's Higher Order Functions/Methods: -
+
+1. forEach
+
+    The forEach() method is an iterative method. It calls a provided callbackFunction function once for each element in an array in ascending-index order. This method always returns undefined and is not chainable. It expects a synchronous function — and does not wait for promises.
+
+    In a sparse array while using forEach() the callback function won't be called on the empty spaces.
+
+
+    forEach(callbackFunction);
+    forEach(callbackFunction, objectArgument);
+
+    callbackFunction: -
+
+        A function to execute for each element in the array. The function is called with the following arguments: -
+            element - The current element being processed in the array.
+            index - The index of the current element being processed in the array.
+            array - The array on which forEach() was called upon.
+
+    
+    objectArgument: - 
+
+        An object to which `this` keyword can refer to in the callbackFunction function.
+
+
+    Example: - 
+
+    let array = [1, 2, 3, 4, 5];
+
+    array.forEach(
+        function (el) {
+            console.log(this.name, el);
+        },
+        { name: "GUVI" },
+    );
+
+
+2. map
+
+    The map() method is an iterative method. It calls a provided callbackFunction function once for each element in an array and constructs a new array from the results. When `undefined` or nothing is returned, the resulting array contains `undefined`.
+
+    A sparse array remains sparse after map(). The indices of empty slots are still empty in the returned array, and the callback function won't be called on them.
+
+
+    map(callbackFunction);
+    map(callbackFunction, objectArgument);
+
+    callbackFunction: -
+
+        A function to execute for each element in the array. Its return value is added as a single element in the new array. The function is called with the following arguments: -
+            element - The current element being processed in the array.
+            index - The index of the current element being processed in the array.
+            array - The array on which map() was called upon.
+
+
+    objectArgument: - 
+
+        An object to which `this` keyword can refer to in the callbackFunction function.   
+
+
+    Example: - 
+
+    const numbers = [1, 2, 3, 4];
+
+    const filteredNumbers = numbers.map((num, index) => {
+        if (index < 3) {
+            return num;
+        }
+    });
+
+
+3. filter
+
+    The filter() method is an iterative method. It calls a provided callbackFunction function once for each element in an array, and constructs a new array of all the values for which callbackFunction returns a truthy value. Array elements which do not pass the callbackFunction test are not included in the new array.
+
+    callbackFunction is invoked only for array indexes which have assigned values. It is not invoked for empty slots in sparse arrays.
+
+
+    filter(callbackFunction);
+    filter(callbackFunction, objectArgument);
+
+    callbackFunction: -
+
+        A function to execute for each element in the array. It should return a truthy value to keep the element in the resulting array, and a falsy value otherwise. The function is called with the following arguments: -
+            element - The current element being processed in the array.
+            index - The index of the current element being processed in the array.
+            array - The array on which filter() was called upon.
+
+
+    objectArgument: - 
+
+        An object to which `this` keyword can refer to in the callbackFunction function.
+
+
+    Example: - 
+
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    let filteredNumbers = numbers.filter((num) => {
+        return num % 2 === 0;
+    });
+
+
+4. reduce 
+
+    
